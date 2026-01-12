@@ -1,4 +1,4 @@
-# Head-to-Head Wins Matrix (JSON → Terminal Table)
+# Head-to-Head Wins Matrix (Python)
 
 This repo contains a Python script that reads head-to-head win/loss data from a JSON file and prints a **wins-only head-to-head matrix** (teams × teams). The output is formatted similarly to a Sports-Reference style head-to-head grid.
 
@@ -83,3 +83,4 @@ The script expects a JSON file named `head_to_head.json` in this format:
   - `head_to_head_matrix.py` — script that loads JSON, builds the matrix, prints the table
   - `head_to_head.json` — input data file
   - `README.md` — this explanation
+
