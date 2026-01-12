@@ -31,7 +31,7 @@ The script expects a JSON file named `head_to_head.json` in this format:
   - `L`: losses by the team vs the opponent
 - This script prints wins only (`W`). Losses are included in the input format but are not needed for the wins-only matrix.
 
-- **Output**
+## Output
   - Rows = team
   - Columns = opponent
   - Cell value = wins by row team vs column team
@@ -46,7 +46,7 @@ The script expects a JSON file named `head_to_head.json` in this format:
     Tm  BRO BSN CHC ...
     ```
 
-- **Approach**
+## Approach
   - **1) Load JSON into a nested dictionary**
     - `load_h2h()` uses `json.load()` to read the file into a nested Python dict.
     - `h2h[team][opp]` returns a record like `{"W": 10, "L": 12}`.
@@ -70,7 +70,7 @@ The script expects a JSON file named `head_to_head.json` in this format:
       - prints using `to_string(index=False)`
       - repeats the header line at the bottom using `s.splitlines()[0]`
 
-- **Running the Script**
+## Running the Script
   - Requirements:
     - Python 3.9+
     - pandas
@@ -79,8 +79,9 @@ The script expects a JSON file named `head_to_head.json` in this format:
   - Run:
     - `python head_to_head_matrix.py`
 
-- **Files**
+## Files
   - `head_to_head_matrix.py` — script that loads JSON, builds the matrix, prints the table
   - `head_to_head.json` — input data file
   - `README.md` — this explanation
+
 
