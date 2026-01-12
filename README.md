@@ -23,6 +23,7 @@ The script expects a JSON file named `head_to_head.json` in this format:
     "BRO": { "W": 12, "L": 10 }
   }
 }
+```
 Top-level keys = team IDs (rows)
 
 Second-level keys = opponent IDs (columns)
@@ -113,5 +114,6 @@ head_to_head_matrix.py — script that loads JSON, builds the matrix, prints the
 head_to_head.json — input data file
 
 README.md — this explanation
+
 
 
